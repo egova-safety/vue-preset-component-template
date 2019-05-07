@@ -9,8 +9,7 @@
     "scripts": {
         "dist:build": "vue-cli-service build --target lib --name index src/index.ts",
         "dist:types": "tsc -d --emitDeclarationOnly --declarationDir dist/types",
-        "dist:clean": "node ./node_modules/rimraf/bin.js ./dist",
-        "dist": "npm run dist:clean && npm run dist:build && npm run dist:types",
+        "dist": "npm run dist:build && npm run dist:types",
         "template:clear": "node build/template.clear.js",
         "template:build": "node build/template.build.js",
         "template:deploy": "cd .template && git init && git add -A && git commit -m 'deploy' && git push -f https://github.com/egova-safety/vue-preset-component-template.git master:master",

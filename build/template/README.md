@@ -15,23 +15,3 @@ $ npm install -g @vue/cli
 ``` bash
 $ vue create --preset egova-safety/#{pluginName} my-project
 ```
-
-## 包含哪些内容?
-
-- `npm run serve` 进入调试模式，默认地址为 `http://localhost:8030`
-- `npm run dll` 预打包核心依赖库
-- `npm run build` 生产打包
-
-## 注意事项
-
-因为采用了 dll 预打包，所以首次（或核心库版本发生变动），需要执行:
-
-``` bash
-$ npm run dll
-```
-
-默认核心库包含如下内容:
-
-- vue
-    - vue
-    - vue-router
